@@ -1,0 +1,81 @@
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 2; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 3; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 4; ]
+using Toybox.Lang as :Lang;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 5; ]
+using Toybox.Application;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 6; ]
+using Toybox.ActivityMonitor;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 8; ]
+module AlienIcon {
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 10; @position = 4; ]
+    var _AlienImage as BitmapResource or Null;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 12; ]
+    function setSettings() as Void {
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_12_31_15_0_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc" 14 0 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Drawables;
+        %tmp.6 = getv %tmp.5 :alien_id;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        %tmp.8 = as %tmp.7 BitmapResource;
+        putv self :_AlienImage %tmp.8;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_12_31_15_0_stop:
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 17; ]
+    function drawbackground(dc as Dc) as Void {
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_17_42_27_0_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc" 19 0 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_stmt:
+        %tmp.2 = getv ? :_AlienImage;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_false;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_25_22_0_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc" 21 0 ]
+        %tmp.5 = lgetv %dc;
+        %tmp.6 = getv function %tmp.5 :drawBitmap;
+        %tmp.7 = -2;
+        %tmp.8 = -2;
+        %tmp.10 = getv ? :_AlienImage;
+        %tmp.11 = as %tmp.10 { (!Null) };
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.11);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_25_22_0_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_false:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_22_7_26_0_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc" 24 0 ]
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = getv function %tmp.12 :setColor;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        %tmp.16 = self;
+        %tmp.17 = getv function %tmp.16 :getApp;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = getv function %tmp.18 :getProperty;
+        %tmp.20 = "BackgroundColor";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = as %tmp.21 Number;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.22);
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc" 25 0 ]
+        %tmp.23 = lgetv %dc;
+        %tmp.24 = getv function %tmp.23 :clear;
+        invoke %tmp.23 %tmp.24();
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_22_7_26_0_stop:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_19_0_26_0_if_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_AlienIcon_mc_17_42_27_0_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\AlienIcon.mc"; @line = 1; ]
+<init> {
+}

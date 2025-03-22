@@ -1,0 +1,43 @@
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 4; ]
+module Fonts {
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 4; ]
+    <init> {
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc" 8 5 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Fonts;
+        %tmp.6 = getv %tmp.5 :big_filled_font;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        putv self :bigFilledFont %tmp.7;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc" 9 5 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        %tmp.11 = getv ? :Rez;
+        %tmp.12 = getv %tmp.11 :Fonts;
+        %tmp.13 = getv %tmp.12 :big_outline_font;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        putv self :bigOutlineFont %tmp.14;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc" 10 5 ]
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        %tmp.18 = getv ? :Rez;
+        %tmp.19 = getv %tmp.18 :Fonts;
+        %tmp.20 = getv %tmp.19 :myfont;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        putv self :myfont %tmp.21;
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 8; @position = 5; ]
+    var bigFilledFont;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 9; @position = 5; ]
+    var bigOutlineFont;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 10; @position = 5; ]
+    var myfont;
+}
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\Fonts.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,77 @@
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 6; ]
+module Newbackground {
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 8; @position = 4; ]
+    var _backgroundImage as BitmapResource or Null;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 10; ]
+    function setSettings() as Void {
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_10_31_13_0_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc" 12 0 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Drawables;
+        %tmp.6 = getv %tmp.5 :space_id;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        %tmp.8 = as %tmp.7 BitmapResource;
+        putv self :_backgroundImage %tmp.8;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_10_31_13_0_stop:
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 15; ]
+    function drawbackground(dc as Dc) as Void {
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_15_42_25_0_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc" 17 0 ]
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_stmt:
+        %tmp.2 = getv ? :_backgroundImage;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_false;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_true:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_30_20_0_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc" 19 0 ]
+        %tmp.5 = lgetv %dc;
+        %tmp.6 = getv function %tmp.5 :drawBitmap;
+        %tmp.7 = -2;
+        %tmp.8 = -2;
+        %tmp.10 = getv ? :_backgroundImage;
+        %tmp.11 = as %tmp.10 { (!Null) };
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.11);
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_30_20_0_stop:
+        goto @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_end;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_false:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_20_7_24_0_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc" 22 0 ]
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = getv function %tmp.12 :setColor;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        %tmp.16 = self;
+        %tmp.17 = getv function %tmp.16 :getApp;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = getv function %tmp.18 :getProperty;
+        %tmp.20 = "BackgroundColor";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = as %tmp.21 Number;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.22);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc" 23 0 ]
+        %tmp.23 = lgetv %dc;
+        %tmp.24 = getv function %tmp.23 :clear;
+        invoke %tmp.23 %tmp.24();
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_20_7_24_0_stop:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_17_0_24_0_if_end:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_NewBackground_mc_15_42_25_0_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\NewBackground.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,185 @@
+{
+  "settings" : [ {
+    "key" : "AppVersion",
+    "valueType" : "string",
+    "defaultValue" : "1.4.0",
+    "configTitle" : "AppVersionTitle",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : true,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourColor",
+    "valueType" : "number",
+    "defaultValue" : 16777215,
+    "configTitle" : "HourColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 283343
+    }, {
+      "display" : "ColorYellow",
+      "value" : 15921276
+    }, {
+      "display" : "ColorPink",
+      "value" : 14690787
+    }, {
+      "display" : "ColorPurple",
+      "value" : 7547363
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinutesColor",
+    "valueType" : "number",
+    "defaultValue" : 16777215,
+    "configTitle" : "MinutesColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 283343
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16775936
+    }, {
+      "display" : "ColorPink",
+      "value" : 14690787
+    }, {
+      "display" : "ColorPurple",
+      "value" : 7547363
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourFilled",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "HourFilledTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinutesFilled",
+    "valueType" : "boolean",
+    "defaultValue" : false,
+    "configTitle" : "MinutesFilledTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DisplaySeconds",
+    "valueType" : "boolean",
+    "defaultValue" : true,
+    "configTitle" : "DisplaySecondsTitle",
+    "configPrompt" : null,
+    "configType" : "boolean",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "Donation",
+    "valueType" : "string",
+    "defaultValue" : "https://paypal.me/sennescheepers",
+    "configTitle" : "DonationTitle",
+    "configPrompt" : null,
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : true,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ColorBlue" : "Blue",
+      "Use12HourTitle" : "Use 12 hour format",
+      "MinutesFilledTitle" : "Use filled font for minutes digits",
+      "MinutesColorTitle" : "Minutes digits color",
+      "ImperialTitle" : "Use imperial units",
+      "ColorYellow" : "Yellow",
+      "BatteryTitle" : "Battery percentage",
+      "AppName" : "Forerunner55WatchFace",
+      "HourColorTitle" : "Hour digits color",
+      "ColorRed" : "Red",
+      "HRTitle" : "Heart rate",
+      "DisplayBatteryPercentageTitle" : "Display battery percentage instead of icon",
+      "DistanceTitle" : "Distance",
+      "ColorPink" : "Pink",
+      "ColorWhite" : "White",
+      "HourFilledTitle" : "Use filled font for hour digits",
+      "ColorGreen" : "Green",
+      "RightDataFieldTitle" : "Right data field",
+      "ColorLightGray" : "Light Gray",
+      "StepsTitle" : "Steps",
+      "AppVersionTitle" : "App version",
+      "DonationTitle" : "If you like it, you can support my work with a small donation",
+      "ColorDarkGray" : "Dark Gray",
+      "ColorBlack" : "Black",
+      "LeftDataFieldTitle" : "Left data field",
+      "CaloriesTitle" : "Calories burned",
+      "FloorsTitle" : "Floors climbed",
+      "ColorPurple" : "Purple",
+      "EmptyTitle" : "Empty",
+      "DisplaySecondsTitle" : "Display seconds"
+    }
+  }
+}

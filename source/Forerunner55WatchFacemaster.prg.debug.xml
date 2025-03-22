@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="1" lineNum="7" parent="globals/Forerunner55WatchFaceView" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="2" lineNum="42" parent="globals" pc="268435476" symbol="getApp"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="2" lineNum="43" parent="globals" pc="268435486" symbol="getApp"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="3" lineNum="6" parent="globals/Background" pc="268435502" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\gen\\006-B3869-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435521" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="5" lineNum="12" parent="globals/BatteryIcon" pc="268435545" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="6" lineNum="5" parent="globals/Forerunner55WatchFaceApp" pc="268435568" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Fonts.mc" id="7" lineNum="8" parent="globals/Fonts" pc="268435587" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Fonts.mc" id="7" lineNum="9" parent="globals/Fonts" pc="268435634" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Fonts.mc" id="7" lineNum="10" parent="globals/Fonts" pc="268435681" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="8" lineNum="31" parent="globals/DataFields" pc="268435729" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="11" lineNum="21" parent="globals/Forerunner55WatchFaceView" pc="268435765" symbol="onLayout"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="11" lineNum="22" parent="globals/Forerunner55WatchFaceView" pc="268435767" symbol="onLayout"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="9" parent="globals/Forerunner55WatchFaceView" pc="268435809" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="10" parent="globals/Forerunner55WatchFaceView" pc="268435811" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="13" parent="globals/Forerunner55WatchFaceView" pc="268435829" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="14" parent="globals/Forerunner55WatchFaceView" pc="268435845" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="15" parent="globals/Forerunner55WatchFaceView" pc="268435861" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="13" lineNum="16" parent="globals/Forerunner55WatchFaceView" pc="268435877" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="32" parent="globals/Forerunner55WatchFaceView" pc="268435894" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="37" parent="globals/Forerunner55WatchFaceView" pc="268435896" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="39" parent="globals/Forerunner55WatchFaceView" pc="268435908" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="42" parent="globals/Forerunner55WatchFaceView" pc="268435926" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="45" parent="globals/Forerunner55WatchFaceView" pc="268435944" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="48" parent="globals/Forerunner55WatchFaceView" pc="268435962" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceView.mc" id="15" lineNum="51" parent="globals/Forerunner55WatchFaceView" pc="268435980" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="32" parent="globals/TimeText" pc="268435999" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="34" parent="globals/TimeText" pc="268436009" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="35" parent="globals/TimeText" pc="268436052" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="36" parent="globals/TimeText" pc="268436076" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="38" parent="globals/TimeText" pc="268436115" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="39" parent="globals/TimeText" pc="268436183" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="41" parent="globals/TimeText" pc="268436213" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="44" parent="globals/TimeText" pc="268436249" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="45" parent="globals/TimeText" pc="268436288" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="47" parent="globals/TimeText" pc="268436327" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="50" parent="globals/TimeText" pc="268436358" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="51" parent="globals/TimeText" pc="268436398" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="52" parent="globals/TimeText" pc="268436429" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="53" parent="globals/TimeText" pc="268436469" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="72" parent="globals/TimeText" pc="268436494" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="73" parent="globals/TimeText" pc="268436519" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="74" parent="globals/TimeText" pc="268436584" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="77" parent="globals/TimeText" pc="268436649" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="78" parent="globals/TimeText" pc="268436674" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="16" lineNum="79" parent="globals/TimeText" pc="268436727" symbol="drawTime"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="17" lineNum="84" parent="globals/TimeText" pc="268436781" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="17" lineNum="86" parent="globals/TimeText" pc="268436791" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="17" lineNum="87" parent="globals/TimeText" pc="268436828" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="17" lineNum="88" parent="globals/TimeText" pc="268436865" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\TimeText.mc" id="17" lineNum="89" parent="globals/TimeText" pc="268436902" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="18" lineNum="8" parent="globals/Background" pc="268436940" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="18" lineNum="9" parent="globals/Background" pc="268436944" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="18" lineNum="13" parent="globals/Background" pc="268436965" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="19" lineNum="16" parent="globals/Background" pc="268436986" symbol="draw"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="19" lineNum="18" parent="globals/Background" pc="268436988" symbol="draw"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceBackground.mc" id="19" lineNum="19" parent="globals/Background" pc="268437030" symbol="draw"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="20" lineNum="10" parent="globals/Newbackground" pc="268437043" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="20" lineNum="12" parent="globals/Newbackground" pc="268437053" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="21" lineNum="15" parent="globals/Newbackground" pc="268437101" symbol="drawbackground"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="21" lineNum="17" parent="globals/Newbackground" pc="268437111" symbol="drawbackground"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="21" lineNum="19" parent="globals/Newbackground" pc="268437124" symbol="drawbackground"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="21" lineNum="22" parent="globals/Newbackground" pc="268437155" symbol="drawbackground"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\NewBackground.mc" id="21" lineNum="23" parent="globals/Newbackground" pc="268437197" symbol="drawbackground"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="22" lineNum="79" parent="globals/BatteryIcon" pc="268437210" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="22" lineNum="80" parent="globals/BatteryIcon" pc="268437220" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="25" parent="globals/BatteryIcon" pc="268437258" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="27" parent="globals/BatteryIcon" pc="268437270" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="28" parent="globals/BatteryIcon" pc="268437297" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="30" parent="globals/BatteryIcon" pc="268437319" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="32" parent="globals/BatteryIcon" pc="268437348" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="33" parent="globals/BatteryIcon" pc="268437379" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="35" parent="globals/BatteryIcon" pc="268437410" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="37" parent="globals/BatteryIcon" pc="268437445" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="40" parent="globals/BatteryIcon" pc="268437456" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="41" parent="globals/BatteryIcon" pc="268437539" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="43" parent="globals/BatteryIcon" pc="268437574" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="45" parent="globals/BatteryIcon" pc="268437603" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="47" parent="globals/BatteryIcon" pc="268437643" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="52" parent="globals/BatteryIcon" pc="268437702" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="53" parent="globals/BatteryIcon" pc="268437730" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="54" parent="globals/BatteryIcon" pc="268437747" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="57" parent="globals/BatteryIcon" pc="268437791" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="60" parent="globals/BatteryIcon" pc="268437886" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="61" parent="globals/BatteryIcon" pc="268437921" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="62" parent="globals/BatteryIcon" pc="268437938" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="64" parent="globals/BatteryIcon" pc="268437969" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="66" parent="globals/BatteryIcon" pc="268437997" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="69" parent="globals/BatteryIcon" pc="268438074" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="70" parent="globals/BatteryIcon" pc="268438151" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="71" parent="globals/BatteryIcon" pc="268438174" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="72" parent="globals/BatteryIcon" pc="268438208" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="74" parent="globals/BatteryIcon" pc="268438233" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\BatteryIcon.mc" id="23" lineNum="75" parent="globals/BatteryIcon" pc="268438261" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="28" parent="globals/Forerunner55WatchFaceApp" pc="268438296" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="30" parent="globals/Forerunner55WatchFaceApp" pc="268438298" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="31" parent="globals/Forerunner55WatchFaceApp" pc="268438314" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="32" parent="globals/Forerunner55WatchFaceApp" pc="268438330" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="33" parent="globals/Forerunner55WatchFaceApp" pc="268438346" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="25" lineNum="37" parent="globals/Forerunner55WatchFaceApp" pc="268438362" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="26" lineNum="22" parent="globals/Forerunner55WatchFaceApp" pc="268438379" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="26" lineNum="24" parent="globals/Forerunner55WatchFaceApp" pc="268438381" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="27" lineNum="9" parent="globals/Forerunner55WatchFaceApp" pc="268438422" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\Forerunner55WatchFaceApp.mc" id="27" lineNum="10" parent="globals/Forerunner55WatchFaceApp" pc="268438424" symbol="initialize"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="215" parent="globals/DataFields" pc="268438443" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="220" parent="globals/DataFields" pc="268438455" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="221" parent="globals/DataFields" pc="268438478" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="226" parent="globals/DataFields" pc="268438538" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="227" parent="globals/DataFields" pc="268438549" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="228" parent="globals/DataFields" pc="268438559" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="230" parent="globals/DataFields" pc="268438624" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="234" parent="globals/DataFields" pc="268438662" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="235" parent="globals/DataFields" pc="268438681" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="236" parent="globals/DataFields" pc="268438700" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="238" parent="globals/DataFields" pc="268438729" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="239" parent="globals/DataFields" pc="268438757" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="241" parent="globals/DataFields" pc="268438785" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="242" parent="globals/DataFields" pc="268438813" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="250" parent="globals/DataFields" pc="268438841" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="29" lineNum="251" parent="globals/DataFields" pc="268438908" symbol="drawCalories"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="30" lineNum="337" parent="globals/DataFields" pc="268438955" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="30" lineNum="339" parent="globals/DataFields" pc="268438965" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="30" lineNum="340" parent="globals/DataFields" pc="268439002" symbol="setSettings"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="176" parent="globals/DataFields" pc="268439040" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="181" parent="globals/DataFields" pc="268439052" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="182" parent="globals/DataFields" pc="268439075" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="183" parent="globals/DataFields" pc="268439092" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="185" parent="globals/DataFields" pc="268439138" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="191" parent="globals/DataFields" pc="268439145" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="195" parent="globals/DataFields" pc="268439183" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="196" parent="globals/DataFields" pc="268439202" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="198" parent="globals/DataFields" pc="268439231" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="199" parent="globals/DataFields" pc="268439268" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="201" parent="globals/DataFields" pc="268439299" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="202" parent="globals/DataFields" pc="268439336" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="204" parent="globals/DataFields" pc="268439358" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="205" parent="globals/DataFields" pc="268439364" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="206" parent="globals/DataFields" pc="268439398" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="210" parent="globals/DataFields" pc="268439432" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="31" lineNum="211" parent="globals/DataFields" pc="268439499" symbol="drawFloors"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="255" parent="globals/DataFields" pc="268439546" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="258" parent="globals/DataFields" pc="268439558" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="259" parent="globals/DataFields" pc="268439581" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="260" parent="globals/DataFields" pc="268439630" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="261" parent="globals/DataFields" pc="268439637" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="262" parent="globals/DataFields" pc="268439660" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="263" parent="globals/DataFields" pc="268439670" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="264" parent="globals/DataFields" pc="268439704" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="265" parent="globals/DataFields" pc="268439722" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="266" parent="globals/DataFields" pc="268439732" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="267" parent="globals/DataFields" pc="268439743" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="268" parent="globals/DataFields" pc="268439753" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="269" parent="globals/DataFields" pc="268439787" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="271" parent="globals/DataFields" pc="268439805" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="274" parent="globals/DataFields" pc="268439853" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="275" parent="globals/DataFields" pc="268439872" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="277" parent="globals/DataFields" pc="268439901" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="278" parent="globals/DataFields" pc="268439938" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="280" parent="globals/DataFields" pc="268439969" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="281" parent="globals/DataFields" pc="268440006" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="283" parent="globals/DataFields" pc="268440028" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="284" parent="globals/DataFields" pc="268440034" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="285" parent="globals/DataFields" pc="268440068" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="289" parent="globals/DataFields" pc="268440102" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="32" lineNum="290" parent="globals/DataFields" pc="268440169" symbol="drawDistance"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="136" parent="globals/DataFields" pc="268440216" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="141" parent="globals/DataFields" pc="268440228" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="142" parent="globals/DataFields" pc="268440251" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="147" parent="globals/DataFields" pc="268440294" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="148" parent="globals/DataFields" pc="268440305" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="149" parent="globals/DataFields" pc="268440315" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="151" parent="globals/DataFields" pc="268440380" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="155" parent="globals/DataFields" pc="268440418" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="156" parent="globals/DataFields" pc="268440437" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="157" parent="globals/DataFields" pc="268440456" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="159" parent="globals/DataFields" pc="268440485" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="160" parent="globals/DataFields" pc="268440513" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="162" parent="globals/DataFields" pc="268440541" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="163" parent="globals/DataFields" pc="268440569" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="171" parent="globals/DataFields" pc="268440597" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="33" lineNum="172" parent="globals/DataFields" pc="268440664" symbol="drawSteps"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="83" parent="globals/DataFields" pc="268440711" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="86" parent="globals/DataFields" pc="268440723" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="91" parent="globals/DataFields" pc="268440730" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="92" parent="globals/DataFields" pc="268440747" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="93" parent="globals/DataFields" pc="268440757" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="94" parent="globals/DataFields" pc="268440764" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="95" parent="globals/DataFields" pc="268440771" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="96" parent="globals/DataFields" pc="268440786" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="98" parent="globals/DataFields" pc="268440819" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="99" parent="globals/DataFields" pc="268440843" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="102" parent="globals/DataFields" pc="268440856" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="108" parent="globals/DataFields" pc="268440863" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="112" parent="globals/DataFields" pc="268440901" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="113" parent="globals/DataFields" pc="268440920" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="114" parent="globals/DataFields" pc="268440939" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="116" parent="globals/DataFields" pc="268440968" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="117" parent="globals/DataFields" pc="268440996" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="119" parent="globals/DataFields" pc="268441024" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="120" parent="globals/DataFields" pc="268441052" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="131" parent="globals/DataFields" pc="268441080" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="34" lineNum="132" parent="globals/DataFields" pc="268441147" symbol="drawHR"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="321" parent="globals/DataFields" pc="268441194" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="326" parent="globals/DataFields" pc="268441204" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="327" parent="globals/DataFields" pc="268441223" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="329" parent="globals/DataFields" pc="268441242" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="330" parent="globals/DataFields" pc="268441270" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="35" lineNum="333" parent="globals/DataFields" pc="268441298" symbol="drawAlien"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="294" parent="globals/DataFields" pc="268441366" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="297" parent="globals/DataFields" pc="268441378" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="298" parent="globals/DataFields" pc="268441415" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="301" parent="globals/DataFields" pc="268441466" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="302" parent="globals/DataFields" pc="268441485" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="304" parent="globals/DataFields" pc="268441514" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="305" parent="globals/DataFields" pc="268441551" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="307" parent="globals/DataFields" pc="268441582" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="308" parent="globals/DataFields" pc="268441619" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="310" parent="globals/DataFields" pc="268441641" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="311" parent="globals/DataFields" pc="268441647" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="312" parent="globals/DataFields" pc="268441681" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="316" parent="globals/DataFields" pc="268441715" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="36" lineNum="317" parent="globals/DataFields" pc="268441782" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="37" lineNum="35" parent="globals/DataFields" pc="268441829" symbol="drawDataFields"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="37" lineNum="46" parent="globals/DataFields" pc="268441839" symbol="drawDataFields"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="37" lineNum="47" parent="globals/DataFields" pc="268441855" symbol="drawDataFields"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="37" lineNum="48" parent="globals/DataFields" pc="268441871" symbol="drawDataFields"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DataFields.mc" id="37" lineNum="49" parent="globals/DataFields" pc="268441887" symbol="drawDataFields"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="22" parent="globals/DateText" pc="268441904" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="24" parent="globals/DateText" pc="268441914" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="26" parent="globals/DateText" pc="268441957" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="27" parent="globals/DateText" pc="268441979" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="29" parent="globals/DateText" pc="268442013" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="30" parent="globals/DateText" pc="268442044" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="31" parent="globals/DateText" pc="268442110" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="33" parent="globals/DateText" pc="268442169" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="34" parent="globals/DateText" pc="268442235" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="36" parent="globals/DateText" pc="268442275" symbol="drawDate"/>
+        <entry filename="C:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\DateText.mc" id="38" lineNum="37" parent="globals/DateText" pc="268442303" symbol="drawDate"/>
+        <entry filename="c:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\gen\\006-B3869-00\\source\\Rez.mcgen" id="39" lineNum="30" parent="globals/Rez/Layouts" pc="268442384" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\gen\\006-B3869-00\\source\\Rez.mcgen" id="39" lineNum="31" parent="globals/Rez/Layouts" pc="268442396" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\gen\\006-B3869-00\\source\\Rez.mcgen" id="39" lineNum="33" parent="globals/Rez/Layouts" pc="268442424" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\HellCoda\\Downloads\\AppGarmin\\Forerunner55WatchFace-master\\source\\gen\\006-B3869-00\\source\\Rez.mcgen" id="39" lineNum="35" parent="globals/Rez/Layouts" pc="268442559" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="34" symbol="textWidthMinutes"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="110" symbol="Use12HourTitle"/>
+        <entry id="19" module="true" symbol="TimeText"/>
+        <entry field="true" id="84" symbol="CaloriesTitle"/>
+        <entry field="true" id="76" symbol="StairsIcon"/>
+        <entry field="true" id="35" symbol="use12Hour"/>
+        <entry field="true" id="8388936" method="true" symbol="info"/>
+        <entry field="true" id="61" symbol="rightDataField"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="105" symbol="LeftDataFieldTitle"/>
+        <entry id="66" method="true" symbol="drawDate"/>
+        <entry field="true" id="100" symbol="FloorsTitle"/>
+        <entry field="true" id="91" symbol="ColorPurple"/>
+        <entry field="true" id="29" symbol="minutesLocY"/>
+        <entry field="true" id="28" symbol="minutesLocX"/>
+        <entry field="true" id="43" symbol="displayPercentage"/>
+        <entry id="14" module="true" symbol="DataFields"/>
+        <entry field="true" id="37" symbol="_backgroundImage"/>
+        <entry field="true" id="88" symbol="ColorGreen"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="94" symbol="ColorYellow"/>
+        <entry field="true" id="8388737" symbol="calories"/>
+        <entry field="true" id="63" symbol="useImperial"/>
+        <entry field="true" id="92" symbol="ColorRed"/>
+        <entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+        <entry field="true" id="70" symbol="DoNotDisturbIcon"/>
+        <entry id="12" module="true" symbol="globals/TimeText"/>
+        <entry field="true" id="67" symbol="textHeightHour"/>
+        <entry field="true" id="65" symbol="dateString"/>
+        <entry field="true" id="42" symbol="dateHeight"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="15" module="true" symbol="DateText"/>
+        <entry id="17" object="true" symbol="Forerunner55WatchFaceView"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="75" symbol="PhoneIcon"/>
+        <entry field="true" id="80" symbol="big_outline_font"/>
+        <entry field="true" id="86" symbol="ColorBlue"/>
+        <entry field="true" id="40" symbol="actualWidth"/>
+        <entry field="true" id="98" symbol="DonationTitle"/>
+        <entry id="20" method="true" symbol="drawTime"/>
+        <entry field="true" id="81" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Newbackground"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry field="true" id="64" symbol="date"/>
+        <entry field="true" id="79" symbol="big_filled_font"/>
+        <entry field="true" id="50" symbol="ICON_WIDTH"/>
+        <entry id="11" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="56" method="true" symbol="drawHR"/>
+        <entry field="true" id="48" symbol="bigOutlineFont"/>
+        <entry id="5" module="true" symbol="globals/Fonts"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry field="true" id="74" symbol="NotificationIcon"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/BatteryIcon"/>
+        <entry id="18" module="true" symbol="Newbackground"/>
+        <entry id="7" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="97" symbol="DistanceTitle"/>
+        <entry field="true" id="33" symbol="textWidthHour"/>
+        <entry field="true" id="106" symbol="MinutesColorTitle"/>
+        <entry id="3" module="true" symbol="globals/DataFields"/>
+        <entry id="38" method="true" symbol="drawbackground"/>
+        <entry field="true" id="69" symbol="AlienIcon"/>
+        <entry field="true" id="60" symbol="leftDataField"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="77" symbol="StepsIcon"/>
+        <entry field="true" id="24" symbol="hourLocY"/>
+        <entry field="true" id="23" symbol="hourLocX"/>
+        <entry id="57" method="true" symbol="drawSteps"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="87" symbol="ColorDarkGray"/>
+        <entry id="10" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="44" method="true" symbol="drawBattery"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="96" symbol="DisplaySecondsTitle"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="32" symbol="textHeight"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="83" symbol="BatteryTitle"/>
+        <entry field="true" id="99" symbol="EmptyTitle"/>
+        <entry field="true" id="93" symbol="ColorWhite"/>
+        <entry field="true" id="85" symbol="ColorBlack"/>
+        <entry field="true" id="41" symbol="batteryPercentage"/>
+        <entry field="true" id="95" symbol="DisplayBatteryPercentageTitle"/>
+        <entry id="8" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="4" module="true" symbol="globals/DateText"/>
+        <entry field="true" id="72" symbol="HeartIcon"/>
+        <entry field="true" id="59" symbol="iconLocY"/>
+        <entry field="true" id="58" symbol="iconLocX"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="25" symbol="hourString"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="30" symbol="minutesString"/>
+        <entry id="55" method="true" symbol="drawFloors"/>
+        <entry field="true" id="8388933" method="true" symbol="moment"/>
+        <entry field="true" id="71" symbol="FireIcon"/>
+        <entry field="true" id="49" symbol="myfont"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="51" method="true" symbol="drawAlien"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="73" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="47" symbol="bigFilledFont"/>
+        <entry id="31" method="true" symbol="setSettings"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="16" object="true" symbol="Forerunner55WatchFaceApp"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry field="true" id="8389872" symbol="floorsClimbed"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="13" module="true" symbol="BatteryIcon"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="45" symbol="totalWidth"/>
+        <entry field="true" id="46" symbol="view"/>
+        <entry field="true" id="102" symbol="HourColorTitle"/>
+        <entry id="52" method="true" symbol="drawCalories"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="89" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry field="true" id="90" symbol="ColorPink"/>
+        <entry field="true" id="21" symbol="hourColor"/>
+        <entry field="true" id="26" symbol="minutesColor"/>
+        <entry field="true" id="104" symbol="ImperialTitle"/>
+        <entry field="true" id="109" symbol="StepsTitle"/>
+        <entry field="true" id="22" symbol="hourFilled"/>
+        <entry field="true" id="39" symbol="ICON_SIZE"/>
+        <entry field="true" id="82" symbol="AppVersionTitle"/>
+        <entry field="true" id="27" symbol="minutesFilled"/>
+        <entry id="36" module="true" symbol="Layouts"/>
+        <entry field="true" id="103" symbol="HourFilledTitle"/>
+        <entry field="true" id="101" symbol="HRTitle"/>
+        <entry id="53" method="true" symbol="drawDataFields"/>
+        <entry field="true" id="108" symbol="RightDataFieldTitle"/>
+        <entry field="true" id="62" symbol="textWidth"/>
+        <entry id="9" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="78" symbol="space_id"/>
+        <entry field="true" id="107" symbol="MinutesFilledTitle"/>
+        <entry id="54" method="true" symbol="drawDistance"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="68" symbol="AlarmIcon"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435808" name="dc" stackId="1" startPc="268435765"/>
+        <entry arg="true" endPc="268435998" name="dc" stackId="1" startPc="268435894"/>
+        <entry arg="true" endPc="268436780" name="dc" stackId="1" startPc="268435999"/>
+        <entry endPc="268436984" name="dictionary" stackId="1" startPc="268436944"/>
+        <entry arg="true" endPc="268437042" name="dc" stackId="1" startPc="268436986"/>
+        <entry arg="true" endPc="268437209" name="dc" stackId="1" startPc="268437101"/>
+        <entry arg="true" endPc="268438295" name="dc" stackId="1" startPc="268437258"/>
+        <entry endPc="268438294" name="batteryText" stackId="2" startPc="268437702"/>
+        <entry endPc="268438294" name="textWidth" stackId="3" startPc="268437702"/>
+        <entry endPc="268438294" name="textX" stackId="4" startPc="268437702"/>
+        <entry endPc="268438294" name="textY" stackId="5" startPc="268437702"/>
+        <entry arg="true" endPc="268438954" name="dc" stackId="1" startPc="268438443"/>
+        <entry arg="true" endPc="268438954" name="left" stackId="2" startPc="268438443"/>
+        <entry endPc="268438953" name="calories" stackId="3" startPc="268438455"/>
+        <entry arg="true" endPc="268439545" name="dc" stackId="1" startPc="268439040"/>
+        <entry arg="true" endPc="268439545" name="left" stackId="2" startPc="268439040"/>
+        <entry endPc="268439544" name="floors" stackId="3" startPc="268439052"/>
+        <entry arg="true" endPc="268440215" name="dc" stackId="1" startPc="268439546"/>
+        <entry arg="true" endPc="268440215" name="left" stackId="2" startPc="268439546"/>
+        <entry endPc="268440214" name="distance" stackId="3" startPc="268439558"/>
+        <entry endPc="268440214" name="unit" stackId="4" startPc="268439558"/>
+        <entry endPc="268440214" name="distanceString" stackId="5" startPc="268439558"/>
+        <entry arg="true" endPc="268440710" name="dc" stackId="1" startPc="268440216"/>
+        <entry arg="true" endPc="268440710" name="left" stackId="2" startPc="268440216"/>
+        <entry endPc="268440709" name="steps" stackId="3" startPc="268440228"/>
+        <entry arg="true" endPc="268441193" name="dc" stackId="1" startPc="268440711"/>
+        <entry arg="true" endPc="268441193" name="right" stackId="2" startPc="268440711"/>
+        <entry endPc="268441192" name="activityInfo" stackId="3" startPc="268440723"/>
+        <entry endPc="268441192" name="value" stackId="4" startPc="268440723"/>
+        <entry endPc="268441192" name="sample" stackId="5" startPc="268440723"/>
+        <entry endPc="268441192" name="HR" stackId="6" startPc="268440723"/>
+        <entry arg="true" endPc="268441365" name="dc" stackId="1" startPc="268441194"/>
+        <entry arg="true" endPc="268441365" name="left" stackId="2" startPc="268441194"/>
+        <entry arg="true" endPc="268441828" name="dc" stackId="1" startPc="268441366"/>
+        <entry arg="true" endPc="268441828" name="left" stackId="2" startPc="268441366"/>
+        <entry endPc="268441827" name="battery" stackId="3" startPc="268441378"/>
+        <entry arg="true" endPc="268441903" name="dc" stackId="1" startPc="268441829"/>
+        <entry arg="true" endPc="268442383" name="dc" stackId="1" startPc="268441904"/>
+        <entry arg="true" endPc="268442585" name="dc" stackId="1" startPc="268442384"/>
+    </localVars>
+    <deviceInfo partNumber="006-B3869-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FireIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CaloriesTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoNotDisturbIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppVersionTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Use12HourTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="EmptyTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="BatteryIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPink"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HRTitle"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="big_outline_font"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StepsTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGreen"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorPurple"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MinutesFilledTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="AlarmIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="AlienIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DisplaySecondsTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LeftDataFieldTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DonationTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="NotificationIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HourColorTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HeartIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HourFilledTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FloorsTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ImperialTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="myfont"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MinutesColorTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="StairsIcon"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="big_filled_font"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorYellow"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DisplayBatteryPercentageTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="StepsIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="space_id"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DistanceTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="RightDataFieldTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="PhoneIcon"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="119" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Forerunner55WatchFaceView" offset="246" parentId="globals" symbolId="Forerunner55WatchFaceView" type="class"/>
+        <dataEntry label="globals/TimeText" offset="341" parentId="globals" symbolId="TimeText" type="module"/>
+        <dataEntry label="globals/Background" offset="508" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="563" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Newbackground" offset="626" parentId="globals" symbolId="Newbackground" type="module"/>
+        <dataEntry label="globals/BatteryIcon" offset="681" parentId="globals" symbolId="BatteryIcon" type="module"/>
+        <dataEntry label="globals/Forerunner55WatchFaceApp" offset="808" parentId="globals" symbolId="Forerunner55WatchFaceApp" type="class"/>
+        <dataEntry label="globals/Fonts" offset="895" parentId="globals" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/DataFields" offset="950" parentId="globals" symbolId="DataFields" type="module"/>
+        <dataEntry label="globals/DateText" offset="1157" parentId="globals" symbolId="DateText" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1252" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1379" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1418" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1473" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435475" name="&lt;init&gt;" parent="Forerunner55WatchFaceView" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="TimeText">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435501" name="getApp" startPc="268435476">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435520" name="&lt;init&gt;" parent="Background" startPc="268435502">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435544" name="&lt;init&gt;" parent="Rez" startPc="268435521">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Newbackground">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435567" name="&lt;init&gt;" parent="BatteryIcon" startPc="268435545">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435586" name="&lt;init&gt;" parent="Forerunner55WatchFaceApp" startPc="268435568">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435728" name="&lt;init&gt;" parent="Fonts" startPc="268435587">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435764" name="&lt;init&gt;" parent="DataFields" startPc="268435729">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DateText">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="Forerunner55WatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Forerunner55WatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435808" name="onLayout" parent="Forerunner55WatchFaceView" startPc="268435765">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="Forerunner55WatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435893" name="initialize" parent="Forerunner55WatchFaceView" startPc="268435809">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Forerunner55WatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435998" name="onUpdate" parent="Forerunner55WatchFaceView" startPc="268435894">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436780" name="drawTime" parent="TimeText" startPc="268435999">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436939" name="setSettings" parent="TimeText" startPc="268436781">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436985" name="initialize" parent="Background" startPc="268436940">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437042" name="draw" parent="Background" startPc="268436986">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437100" name="setSettings" parent="Newbackground" startPc="268437043">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437209" name="drawbackground" parent="Newbackground" startPc="268437101">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437257" name="setSettings" parent="BatteryIcon" startPc="268437210">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438295" name="drawBattery" parent="BatteryIcon" startPc="268437258">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="Forerunner55WatchFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438378" name="onSettingsChanged" parent="Forerunner55WatchFaceApp" startPc="268438296">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438421" name="getInitialView" parent="Forerunner55WatchFaceApp" startPc="268438379">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438442" name="initialize" parent="Forerunner55WatchFaceApp" startPc="268438422">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="Forerunner55WatchFaceApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438954" name="drawCalories" parent="DataFields" startPc="268438443">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439039" name="setSettings" parent="DataFields" startPc="268438955">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439545" name="drawFloors" parent="DataFields" startPc="268439040">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440215" name="drawDistance" parent="DataFields" startPc="268439546">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440710" name="drawSteps" parent="DataFields" startPc="268440216">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441193" name="drawHR" parent="DataFields" startPc="268440711">
+            <param id="dc"/>
+            <param id="right"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441365" name="drawAlien" parent="DataFields" startPc="268441194">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441828" name="drawBattery" parent="DataFields" startPc="268441366">
+            <param id="dc"/>
+            <param id="left"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441903" name="drawDataFields" parent="DataFields" startPc="268441829">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442383" name="drawDate" parent="DateText" startPc="268441904">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442585" name="WatchFace" parent="Layouts" startPc="268442384">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

@@ -1,0 +1,354 @@
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 1; ]
+import Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 4; ]
+module StatusIcons {
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 6; @position = 5; ]
+    var settings;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 8; @position = 5; ]
+    var ICON_WIDTH = 12;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 9; @position = 5; ]
+    var SPACING = 4;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 11; @position = 5; ]
+    var totalWidth;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 13; @position = 5; ]
+    var phoneConnected;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 14; @position = 5; ]
+    var hasNotification;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 15; @position = 5; ]
+    var doNotDisturb;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 16; @position = 5; ]
+    var alarmEnabled;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 18; @position = 5; ]
+    var iconsToDraw;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 19; @position = 5; ]
+    var numberOfIcons;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 21; @position = 5; ]
+    var locX;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 22; @position = 5; ]
+    var locY = 20;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 24; ]
+    function drawIcons(dc) {
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_24_24_88_1_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 26 2 ]
+        %tmp.2 = 4;
+        %tmp.1 = newa %tmp.2;
+        putv self :iconsToDraw %tmp.1;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 27 2 ]
+        %tmp.3 = 0;
+        putv self :numberOfIcons %tmp.3;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 28 2 ]
+        %tmp.4 = 0;
+        putv self :totalWidth %tmp.4;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 30 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_2_32_2_if_stmt:
+        %tmp.5 = lgetv %dc;
+        %tmp.6 = getv function %tmp.5 :getHeight;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = 240;
+        %tmp.9 = lt %tmp.7 %tmp.8;
+        bf %tmp.9 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_2_32_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_2_32_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_28_32_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 31 3 ]
+        %tmp.10 = 15;
+        putv self :locY %tmp.10;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_28_32_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_2_32_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_30_2_32_2_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 35 2 ]
+        %tmp.11 = getm $.Toybox.System;
+        %tmp.12 = getv function %tmp.11 :getDeviceSettings;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        putv self :settings %tmp.13;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 37 2 ]
+        %tmp.15 = getv ? :settings;
+        %tmp.16 = getv %tmp.15 :phoneConnected;
+        putv self :phoneConnected %tmp.16;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 38 2 ]
+        %tmp.18 = getv ? :settings;
+        %tmp.19 = getv %tmp.18 :alarmCount;
+        %tmp.20 = 0;
+        %tmp.21 = gt %tmp.19 %tmp.20;
+        putv self :alarmEnabled %tmp.21;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 39 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_begin:
+        %tmp.23 = getv ? :settings;
+        %tmp.25 = const :doNotDisturb;
+        %tmp.26 = canhazplz %tmp.23 %tmp.25;
+        bf %tmp.26 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_false;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_true:
+        %tmp.28 = getv ? :settings;
+        %tmp.29 = as %tmp.28 { (interface { var doNotDisturb; }) };
+        %tmp.30 = getv %tmp.29 :doNotDisturb;
+        push %tmp.30;
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_false:
+        %tmp.31 = false;
+        push %tmp.31;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_end:
+        %tmp.32 = phi [%tmp.26 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_begin] [%tmp.30 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_true] [%tmp.31 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_false] [%tmp.32 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_39_17_39_72_end];
+        putv self :doNotDisturb %tmp.32;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 40 2 ]
+        %tmp.34 = getv ? :settings;
+        %tmp.35 = getv %tmp.34 :notificationCount;
+        %tmp.36 = 0;
+        %tmp.37 = gt %tmp.35 %tmp.36;
+        putv self :hasNotification %tmp.37;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 43 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_2_47_2_if_stmt:
+        %tmp.39 = getv ? :phoneConnected;
+        bf %tmp.39 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_2_47_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_2_47_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_22_47_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 44 3 ]
+        %tmp.40 = getv self :totalWidth;
+        %tmp.42 = getv ? :ICON_WIDTH;
+        %tmp.43 = add %tmp.40 %tmp.42;
+        putv self :totalWidth dup %tmp.43;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 45 3 ]
+        %tmp.44 = getv self :iconsToDraw;
+        %tmp.45 = "phone";
+        %tmp.47 = getv ? :numberOfIcons;
+        aputv %tmp.44 %tmp.47 %tmp.45;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 46 3 ]
+        %tmp.50 = getv ? :numberOfIcons;
+        %tmp.51 = add %tmp.50 1;
+        putv self :numberOfIcons dup %tmp.51;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_22_47_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_2_47_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_43_2_47_2_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 48 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_2_52_2_if_stmt:
+        %tmp.53 = getv ? :hasNotification;
+        bf %tmp.53 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_2_52_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_2_52_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_23_52_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 49 3 ]
+        %tmp.54 = getv self :totalWidth;
+        %tmp.56 = getv ? :ICON_WIDTH;
+        %tmp.57 = add %tmp.54 %tmp.56;
+        putv self :totalWidth dup %tmp.57;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 50 3 ]
+        %tmp.58 = getv self :iconsToDraw;
+        %tmp.59 = "notification";
+        %tmp.61 = getv ? :numberOfIcons;
+        aputv %tmp.58 %tmp.61 %tmp.59;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 51 3 ]
+        %tmp.64 = getv ? :numberOfIcons;
+        %tmp.65 = add %tmp.64 1;
+        putv self :numberOfIcons dup %tmp.65;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_23_52_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_2_52_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_48_2_52_2_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 53 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_2_57_2_if_stmt:
+        %tmp.67 = getv ? :doNotDisturb;
+        bf %tmp.67 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_2_57_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_2_57_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_20_57_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 54 3 ]
+        %tmp.68 = getv self :totalWidth;
+        %tmp.70 = getv ? :ICON_WIDTH;
+        %tmp.71 = add %tmp.68 %tmp.70;
+        putv self :totalWidth dup %tmp.71;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 55 3 ]
+        %tmp.72 = getv self :iconsToDraw;
+        %tmp.73 = "dnd";
+        %tmp.75 = getv ? :numberOfIcons;
+        aputv %tmp.72 %tmp.75 %tmp.73;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 56 3 ]
+        %tmp.78 = getv ? :numberOfIcons;
+        %tmp.79 = add %tmp.78 1;
+        putv self :numberOfIcons dup %tmp.79;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_20_57_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_2_57_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_53_2_57_2_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 58 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_2_62_2_if_stmt:
+        %tmp.81 = getv ? :alarmEnabled;
+        bf %tmp.81 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_2_62_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_2_62_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_20_62_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 59 3 ]
+        %tmp.82 = getv self :totalWidth;
+        %tmp.84 = getv ? :ICON_WIDTH;
+        %tmp.85 = add %tmp.82 %tmp.84;
+        putv self :totalWidth dup %tmp.85;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 60 3 ]
+        %tmp.86 = getv self :iconsToDraw;
+        %tmp.87 = "alarm";
+        %tmp.89 = getv ? :numberOfIcons;
+        aputv %tmp.86 %tmp.89 %tmp.87;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 61 3 ]
+        %tmp.92 = getv ? :numberOfIcons;
+        %tmp.93 = add %tmp.92 1;
+        putv self :numberOfIcons dup %tmp.93;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_20_62_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_2_62_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_58_2_62_2_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 63 2 ]
+        %tmp.94 = getv self :totalWidth;
+        %tmp.96 = getv ? :totalWidth;
+        %tmp.98 = getv ? :ICON_WIDTH;
+        %tmp.99 = div %tmp.96 %tmp.98;
+        %tmp.100 = 1;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        %tmp.103 = getv ? :SPACING;
+        %tmp.104 = mul %tmp.101 %tmp.103;
+        %tmp.105 = add %tmp.94 %tmp.104;
+        putv self :totalWidth dup %tmp.105;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 66 2 ]
+        %tmp.106 = lgetv %dc;
+        %tmp.107 = getv function %tmp.106 :getWidth;
+        %tmp.108 = invoke %tmp.106 %tmp.107();
+        %tmp.110 = getv ? :totalWidth;
+        %tmp.111 = sub %tmp.108 %tmp.110;
+        %tmp.112 = 2;
+        %tmp.113 = div %tmp.111 %tmp.112;
+        putv self :locX %tmp.113;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 69 2 ]
+        for @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_test @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_incr @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_init:
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_begin" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_end" ]
+        %i.1 = local;
+        %tmp.114 = 0;
+        lputv %i.1 %tmp.114;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_test:
+        %tmp.116 = lgetv %i.1;
+        %tmp.118 = getv ? :numberOfIcons;
+        %tmp.119 = lt %tmp.116 %tmp.118;
+        bf %tmp.119 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_begin:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_42_84_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 71 3 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_42_84_2_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_42_84_2_stop" ]
+        %type.2 = local;
+        %tmp.121 = getv ? :iconsToDraw;
+        %tmp.123 = lgetv %i.1;
+        %tmp.124 = agetv %tmp.121 %tmp.123;
+        lputv %type.2 %tmp.124;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 73 3 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_stmt:
+        %tmp.125 = lgetv %type.2;
+        %tmp.126 = getv function %tmp.125 :equals;
+        %tmp.127 = "phone";
+        %tmp.128 = invoke %tmp.125 %tmp.126(%tmp.127);
+        bf %tmp.128 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_false;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_29_75_3_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 74 4 ]
+        %tmp.129 = lgetv %dc;
+        %tmp.130 = getv function %tmp.129 :drawBitmap;
+        %tmp.132 = getv ? :locX;
+        %tmp.134 = getv ? :locY;
+        %tmp.135 = getm $.Toybox.WatchUi;
+        %tmp.136 = getv function %tmp.135 :loadResource;
+        %tmp.138 = getv ? :Rez;
+        %tmp.139 = getv %tmp.138 :Drawables;
+        %tmp.140 = getv %tmp.139 :PhoneIcon;
+        %tmp.141 = invoke %tmp.135 %tmp.136(%tmp.140);
+        invoke %tmp.129 %tmp.130(%tmp.132, %tmp.134, %tmp.141);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_29_75_3_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_false:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 75 10 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_stmt:
+        %tmp.142 = lgetv %type.2;
+        %tmp.143 = getv function %tmp.142 :equals;
+        %tmp.144 = "notification";
+        %tmp.145 = invoke %tmp.142 %tmp.143(%tmp.144);
+        bf %tmp.145 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_false;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_43_77_3_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 76 4 ]
+        %tmp.146 = lgetv %dc;
+        %tmp.147 = getv function %tmp.146 :drawBitmap;
+        %tmp.149 = getv ? :locX;
+        %tmp.151 = getv ? :locY;
+        %tmp.152 = getm $.Toybox.WatchUi;
+        %tmp.153 = getv function %tmp.152 :loadResource;
+        %tmp.155 = getv ? :Rez;
+        %tmp.156 = getv %tmp.155 :Drawables;
+        %tmp.157 = getv %tmp.156 :NotificationIcon;
+        %tmp.158 = invoke %tmp.152 %tmp.153(%tmp.157);
+        invoke %tmp.146 %tmp.147(%tmp.149, %tmp.151, %tmp.158);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_43_77_3_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_false:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 77 10 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_stmt:
+        %tmp.159 = lgetv %type.2;
+        %tmp.160 = getv function %tmp.159 :equals;
+        %tmp.161 = "dnd";
+        %tmp.162 = invoke %tmp.159 %tmp.160(%tmp.161);
+        bf %tmp.162 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_false;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_34_79_3_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 78 4 ]
+        %tmp.163 = lgetv %dc;
+        %tmp.164 = getv function %tmp.163 :drawBitmap;
+        %tmp.166 = getv ? :locX;
+        %tmp.168 = getv ? :locY;
+        %tmp.169 = getm $.Toybox.WatchUi;
+        %tmp.170 = getv function %tmp.169 :loadResource;
+        %tmp.172 = getv ? :Rez;
+        %tmp.173 = getv %tmp.172 :Drawables;
+        %tmp.174 = getv %tmp.173 :DoNotDisturbIcon;
+        %tmp.175 = invoke %tmp.169 %tmp.170(%tmp.174);
+        invoke %tmp.163 %tmp.164(%tmp.166, %tmp.168, %tmp.175);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_34_79_3_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_false:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 79 10 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_10_81_3_if_stmt:
+        %tmp.176 = lgetv %type.2;
+        %tmp.177 = getv function %tmp.176 :equals;
+        %tmp.178 = "alarm";
+        %tmp.179 = invoke %tmp.176 %tmp.177(%tmp.178);
+        bf %tmp.179 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_10_81_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_10_81_3_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_36_81_3_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 80 4 ]
+        %tmp.180 = lgetv %dc;
+        %tmp.181 = getv function %tmp.180 :drawBitmap;
+        %tmp.183 = getv ? :locX;
+        %tmp.185 = getv ? :locY;
+        %tmp.186 = getm $.Toybox.WatchUi;
+        %tmp.187 = getv function %tmp.186 :loadResource;
+        %tmp.189 = getv ? :Rez;
+        %tmp.190 = getv %tmp.189 :Drawables;
+        %tmp.191 = getv %tmp.190 :AlarmIcon;
+        %tmp.192 = invoke %tmp.186 %tmp.187(%tmp.191);
+        invoke %tmp.180 %tmp.181(%tmp.183, %tmp.185, %tmp.192);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_36_81_3_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_10_81_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_79_10_81_3_if_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_77_10_81_3_if_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_75_10_81_3_if_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_73_3_81_3_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 83 3 ]
+        %tmp.193 = getv self :locX;
+        %tmp.195 = getv ? :ICON_WIDTH;
+        %tmp.197 = getv ? :SPACING;
+        %tmp.198 = add %tmp.195 %tmp.197;
+        %tmp.199 = add %tmp.193 %tmp.198;
+        putv self :locX dup %tmp.199;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_42_84_2_stop:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_incr:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc" 69 ]
+        %tmp.202 = lgetv %i.1;
+        %tmp.203 = add %tmp.202 1;
+        lputv %i.1 %tmp.203;
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_test;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_69_2_84_2_for_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_StatusIcons_mc_24_24_88_1_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\StatusIcons.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,290 @@
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 2; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 3; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 4; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 5; ]
+using Toybox.Time;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 6; ]
+using Toybox.Lang as :Lang;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 7; ]
+using Toybox.Application;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 9; ]
+module TimeText {
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 11; @position = 5; ]
+    var use12Hour;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 13; @position = 5; ]
+    var textWidthHour;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 14; @position = 5; ]
+    var textWidthMinutes;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 15; @position = 5; ]
+    var textHeight;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 17; @position = 5; ]
+    var hourColor;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 18; @position = 5; ]
+    var minutesColor;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 20; @position = 5; ]
+    var hourFilled;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 21; @position = 5; ]
+    var minutesFilled;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 23; @position = 5; ]
+    var moment;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 24; @position = 5; ]
+    var hourString;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 25; @position = 5; ]
+    var minutesString;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 27; @position = 5; ]
+    var hourLocX;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 28; @position = 5; ]
+    var hourLocY;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 29; @position = 5; ]
+    var minutesLocX;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 30; @position = 5; ]
+    var minutesLocY;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 32; ]
+    function drawTime(dc) {
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_32_23_81_1_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 34 2 ]
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv function %tmp.1 :info;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getm $.Toybox.Time;
+        %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        putv self :moment %tmp.8;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 35 2 ]
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_stmt:
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :getDeviceSettings;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = getv %tmp.11 :is24Hour;
+        bf %tmp.12 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_false;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_true:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_63_37_2_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 36 3 ]
+        %tmp.14 = getv ? :moment;
+        %tmp.15 = getv %tmp.14 :hour;
+        %tmp.16 = getv function %tmp.15 :format;
+        %tmp.17 = "%02d";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        putv self :hourString %tmp.18;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_63_37_2_stop:
+        goto @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_end;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_false:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_37_9_40_2_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 38 3 ]
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_begin:
+        %tmp.20 = getv ? :moment;
+        %tmp.21 = getv %tmp.20 :hour;
+        %tmp.22 = 12;
+        %tmp.23 = gt %tmp.21 %tmp.22;
+        bf %tmp.23 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_false;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_true:
+        %tmp.25 = getv ? :moment;
+        %tmp.26 = getv %tmp.25 :hour;
+        %tmp.27 = 12;
+        %tmp.28 = mod %tmp.26 %tmp.27;
+        push %tmp.28;
+        goto @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_end;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_false:
+        %tmp.30 = getv ? :moment;
+        %tmp.31 = getv %tmp.30 :hour;
+        push %tmp.31;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_end:
+        %tmp.32 = phi [%tmp.23 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_begin] [%tmp.28 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_true] [%tmp.31 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_false] [%tmp.32 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_38_16_38_63_end];
+        putv self :hourString %tmp.32;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 39 3 ]
+        %tmp.34 = getv ? :hourString;
+        %tmp.35 = getv function %tmp.34 :format;
+        %tmp.36 = "%02d";
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        putv self :hourString %tmp.37;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_37_9_40_2_stop:
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_35_2_40_2_if_end:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 41 2 ]
+        %tmp.39 = getv ? :moment;
+        %tmp.40 = getv %tmp.39 :min;
+        %tmp.41 = getv function %tmp.40 :format;
+        %tmp.42 = "%02d";
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        putv self :minutesString %tmp.43;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 44 2 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :getTextWidthInPixels;
+        %tmp.47 = getv ? :hourString;
+        %tmp.49 = getv ? :Fonts;
+        %tmp.50 = getv %tmp.49 :myfont;
+        %tmp.51 = invoke %tmp.44 %tmp.45(%tmp.47, %tmp.50);
+        putv self :textWidthHour %tmp.51;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 45 2 ]
+        %tmp.52 = lgetv %dc;
+        %tmp.53 = getv function %tmp.52 :getTextWidthInPixels;
+        %tmp.55 = getv ? :minutesString;
+        %tmp.57 = getv ? :Fonts;
+        %tmp.58 = getv %tmp.57 :myfont;
+        %tmp.59 = invoke %tmp.52 %tmp.53(%tmp.55, %tmp.58);
+        putv self :textWidthMinutes %tmp.59;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 47 2 ]
+        %tmp.60 = lgetv %dc;
+        %tmp.61 = getv function %tmp.60 :getFontHeight;
+        %tmp.63 = getv ? :Fonts;
+        %tmp.64 = getv %tmp.63 :myfont;
+        %tmp.65 = invoke %tmp.60 %tmp.61(%tmp.64);
+        putv self :textHeight %tmp.65;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 50 2 ]
+        %tmp.66 = lgetv %dc;
+        %tmp.67 = getv function %tmp.66 :getWidth;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.70 = getv ? :textWidthHour;
+        %tmp.71 = sub %tmp.68 %tmp.70;
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        %tmp.74 = 3;
+        %tmp.75 = sub %tmp.73 %tmp.74;
+        putv self :hourLocX %tmp.75;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 51 2 ]
+        %tmp.76 = lgetv %dc;
+        %tmp.77 = getv function %tmp.76 :getHeight;
+        %tmp.78 = invoke %tmp.76 %tmp.77();
+        %tmp.79 = 2;
+        %tmp.80 = div %tmp.78 %tmp.79;
+        %tmp.81 = 85;
+        %tmp.82 = sub %tmp.80 %tmp.81;
+        putv self :hourLocY %tmp.82;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 52 2 ]
+        %tmp.83 = lgetv %dc;
+        %tmp.84 = getv function %tmp.83 :getWidth;
+        %tmp.85 = invoke %tmp.83 %tmp.84();
+        %tmp.87 = getv ? :textWidthMinutes;
+        %tmp.88 = sub %tmp.85 %tmp.87;
+        %tmp.89 = 2;
+        %tmp.90 = div %tmp.88 %tmp.89;
+        %tmp.91 = 3;
+        %tmp.92 = sub %tmp.90 %tmp.91;
+        putv self :minutesLocX %tmp.92;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 53 2 ]
+        %tmp.93 = lgetv %dc;
+        %tmp.94 = getv function %tmp.93 :getHeight;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        %tmp.96 = 125;
+        %tmp.97 = sub %tmp.95 %tmp.96;
+        putv self :minutesLocY %tmp.97;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 72 2 ]
+        %tmp.98 = lgetv %dc;
+        %tmp.99 = getv function %tmp.98 :setColor;
+        %tmp.100 = lgetv %dc;
+        %tmp.101 = getv %tmp.100 :COLOR_BLUE;
+        %tmp.102 = getm $.Toybox.Graphics;
+        %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+        invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 73 2 ]
+        %tmp.104 = lgetv %dc;
+        %tmp.105 = getv function %tmp.104 :drawText;
+        %tmp.107 = getv ? :hourLocX;
+        %tmp.108 = 3;
+        %tmp.109 = add %tmp.107 %tmp.108;
+        %tmp.111 = getv ? :hourLocY;
+        %tmp.112 = 3;
+        %tmp.113 = add %tmp.111 %tmp.112;
+        %tmp.115 = getv ? :Fonts;
+        %tmp.116 = getv %tmp.115 :myfont;
+        %tmp.118 = getv ? :hourString;
+        %tmp.119 = getm $.Toybox.Graphics;
+        %tmp.120 = getv %tmp.119 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.104 %tmp.105(%tmp.109, %tmp.113, %tmp.116, %tmp.118, %tmp.120);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 74 2 ]
+        %tmp.121 = lgetv %dc;
+        %tmp.122 = getv function %tmp.121 :drawText;
+        %tmp.124 = getv ? :minutesLocX;
+        %tmp.125 = 3;
+        %tmp.126 = add %tmp.124 %tmp.125;
+        %tmp.128 = getv ? :minutesLocY;
+        %tmp.129 = 3;
+        %tmp.130 = add %tmp.128 %tmp.129;
+        %tmp.132 = getv ? :Fonts;
+        %tmp.133 = getv %tmp.132 :myfont;
+        %tmp.135 = getv ? :minutesString;
+        %tmp.136 = getm $.Toybox.Graphics;
+        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.121 %tmp.122(%tmp.126, %tmp.130, %tmp.133, %tmp.135, %tmp.137);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 77 2 ]
+        %tmp.138 = lgetv %dc;
+        %tmp.139 = getv function %tmp.138 :setColor;
+        %tmp.140 = lgetv %dc;
+        %tmp.141 = getv %tmp.140 :COLOR_WHITE;
+        %tmp.142 = getm $.Toybox.Graphics;
+        %tmp.143 = getv %tmp.142 :COLOR_TRANSPARENT;
+        invoke %tmp.138 %tmp.139(%tmp.141, %tmp.143);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 78 2 ]
+        %tmp.144 = lgetv %dc;
+        %tmp.145 = getv function %tmp.144 :drawText;
+        %tmp.147 = getv ? :hourLocX;
+        %tmp.149 = getv ? :hourLocY;
+        %tmp.151 = getv ? :Fonts;
+        %tmp.152 = getv %tmp.151 :myfont;
+        %tmp.154 = getv ? :hourString;
+        %tmp.155 = getm $.Toybox.Graphics;
+        %tmp.156 = getv %tmp.155 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.144 %tmp.145(%tmp.147, %tmp.149, %tmp.152, %tmp.154, %tmp.156);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 79 2 ]
+        %tmp.157 = lgetv %dc;
+        %tmp.158 = getv function %tmp.157 :drawText;
+        %tmp.160 = getv ? :minutesLocX;
+        %tmp.162 = getv ? :minutesLocY;
+        %tmp.164 = getv ? :Fonts;
+        %tmp.165 = getv %tmp.164 :myfont;
+        %tmp.167 = getv ? :minutesString;
+        %tmp.168 = getm $.Toybox.Graphics;
+        %tmp.169 = getv %tmp.168 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.157 %tmp.158(%tmp.160, %tmp.162, %tmp.165, %tmp.167, %tmp.169);
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_32_23_81_1_stop:
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 84; ]
+    function setSettings() {
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_84_24_92_1_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 86 2 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv function %tmp.3 :getProperty;
+        %tmp.5 = "HourColor";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        putv self :hourColor %tmp.6;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 87 2 ]
+        %tmp.7 = getm $.Toybox.Application;
+        %tmp.8 = getv function %tmp.7 :getApp;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = getv function %tmp.9 :getProperty;
+        %tmp.11 = "MinutesColor";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        putv self :minutesColor %tmp.12;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 88 2 ]
+        %tmp.13 = getm $.Toybox.Application;
+        %tmp.14 = getv function %tmp.13 :getApp;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = getv function %tmp.15 :getProperty;
+        %tmp.17 = "HourFilled";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        putv self :hourFilled %tmp.18;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc" 89 2 ]
+        %tmp.19 = getm $.Toybox.Application;
+        %tmp.20 = getv function %tmp.19 :getApp;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = getv function %tmp.21 :getProperty;
+        %tmp.23 = "MinutesFilled";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        putv self :minutesFilled %tmp.24;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_TimeText_mc_84_24_92_1_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\TimeText.mc"; @line = 1; ]
+<init> {
+}

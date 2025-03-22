@@ -1,0 +1,170 @@
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 2; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 3; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 4; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 5; ]
+using Toybox.Time;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 6; ]
+using Toybox.Lang as :Lang;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 7; ]
+using Toybox.Application;
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 9; ]
+module DateText {
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 11; @position = 5; ]
+    var date;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 12; @position = 5; ]
+    var dateString;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 14; @position = 5; ]
+    var textWidth;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 15; @position = 5; ]
+    var textWidthHour;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 17; @position = 5; ]
+    var textHeightHour;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 19; @position = 5; ]
+    var locX;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 20; @position = 5; ]
+    var locY;
+    [ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 22; ]
+    function drawDate(dc) {
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_22_23_39_1_start:
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 24 2 ]
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv function %tmp.1 :info;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getm $.Toybox.Time;
+        %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        putv self :date %tmp.8;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 26 2 ]
+        %tmp.10 = getv ? :date;
+        %tmp.11 = getv %tmp.10 :day_of_week;
+        putv self :dateString %tmp.11;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 27 2 ]
+        %tmp.12 = getv self :dateString;
+        %tmp.13 = " ";
+        %tmp.15 = getv ? :date;
+        %tmp.16 = getv %tmp.15 :day;
+        %tmp.17 = add %tmp.13 %tmp.16;
+        %tmp.18 = add %tmp.12 %tmp.17;
+        putv self :dateString dup %tmp.18;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 29 2 ]
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :getFontHeight;
+        %tmp.22 = getv ? :Fonts;
+        %tmp.23 = getv %tmp.22 :bigFilledFont;
+        %tmp.24 = invoke %tmp.19 %tmp.20(%tmp.23);
+        putv self :textHeightHour %tmp.24;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 30 2 ]
+        %tmp.25 = lgetv %dc;
+        %tmp.26 = getv function %tmp.25 :getTextWidthInPixels;
+        %tmp.28 = getv ? :dateString;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_begin:
+        %tmp.29 = lgetv %dc;
+        %tmp.30 = getv function %tmp.29 :getWidth;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        %tmp.32 = 208;
+        %tmp.33 = gt %tmp.31 %tmp.32;
+        bf %tmp.33 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_false;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_true:
+        %tmp.34 = lgetv %dc;
+        %tmp.35 = getv %tmp.34 :FONT_SYSTEM_TINY;
+        push %tmp.35;
+        goto @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_end;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_false:
+        %tmp.36 = lgetv %dc;
+        %tmp.37 = getv %tmp.36 :FONT_SYSTEM_XTINY;
+        push %tmp.37;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_end:
+        %tmp.38 = phi [%tmp.33 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_begin] [%tmp.35 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_true] [%tmp.37 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_false] [%tmp.38 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_30_51_30_100_end];
+        %tmp.39 = invoke %tmp.25 %tmp.26(%tmp.28, %tmp.38);
+        putv self :textWidth %tmp.39;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 31 2 ]
+        %tmp.40 = lgetv %dc;
+        %tmp.41 = getv function %tmp.40 :getTextWidthInPixels;
+        %tmp.43 = getv ? :date;
+        %tmp.44 = getv %tmp.43 :hour;
+        %tmp.45 = getv function %tmp.44 :format;
+        %tmp.46 = "%02d";
+        %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
+        %tmp.49 = getv ? :Fonts;
+        %tmp.50 = getv %tmp.49 :bigFilledFont;
+        %tmp.51 = invoke %tmp.40 %tmp.41(%tmp.47, %tmp.50);
+        putv self :textWidthHour %tmp.51;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 33 2 ]
+        %tmp.52 = lgetv %dc;
+        %tmp.53 = getv function %tmp.52 :getWidth;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.56 = getv ? :textWidth;
+        %tmp.57 = sub %tmp.54 %tmp.56;
+        %tmp.59 = getv ? :BatteryIcon;
+        %tmp.60 = getv %tmp.59 :actualWidth;
+        %tmp.61 = sub %tmp.57 %tmp.60;
+        %tmp.62 = 2;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        %tmp.65 = getv ? :BatteryIcon;
+        %tmp.66 = getv %tmp.65 :actualWidth;
+        %tmp.67 = add %tmp.63 %tmp.66;
+        %tmp.68 = 15;
+        %tmp.69 = sub %tmp.67 %tmp.68;
+        putv self :locX %tmp.69;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 34 2 ]
+        %tmp.70 = lgetv %dc;
+        %tmp.71 = getv function %tmp.70 :getHeight;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        %tmp.73 = 2;
+        %tmp.74 = div %tmp.72 %tmp.73;
+        %tmp.76 = getv ? :textHeightHour;
+        %tmp.77 = sub %tmp.74 %tmp.76;
+        %tmp.78 = 30;
+        %tmp.79 = sub %tmp.77 %tmp.78;
+        putv self :locY %tmp.79;
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 36 2 ]
+        %tmp.80 = lgetv %dc;
+        %tmp.81 = getv function %tmp.80 :setColor;
+        %tmp.82 = lgetv %dc;
+        %tmp.83 = getv %tmp.82 :COLOR_BLUE;
+        %tmp.84 = lgetv %dc;
+        %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+        invoke %tmp.80 %tmp.81(%tmp.83, %tmp.85);
+[ "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc" 37 2 ]
+        %tmp.86 = lgetv %dc;
+        %tmp.87 = getv function %tmp.86 :drawText;
+        %tmp.89 = getv ? :locX;
+        %tmp.91 = getv ? :locY;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_begin:
+        %tmp.92 = lgetv %dc;
+        %tmp.93 = getv function %tmp.92 :getWidth;
+        %tmp.94 = invoke %tmp.92 %tmp.93();
+        %tmp.95 = 208;
+        %tmp.96 = gt %tmp.94 %tmp.95;
+        bf %tmp.96 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_false;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_true:
+        %tmp.97 = lgetv %dc;
+        %tmp.98 = getv %tmp.97 :FONT_SYSTEM_TINY;
+        push %tmp.98;
+        goto @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_end;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_false:
+        %tmp.99 = lgetv %dc;
+        %tmp.100 = getv %tmp.99 :FONT_SYSTEM_XTINY;
+        push %tmp.100;
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_end:
+        %tmp.101 = phi [%tmp.96 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_begin] [%tmp.98 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_true] [%tmp.100 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_false] [%tmp.101 @C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_37_27_37_76_end];
+        %tmp.103 = getv ? :dateString;
+        %tmp.104 = getm $.Toybox.Graphics;
+        %tmp.105 = getv %tmp.104 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91, %tmp.101, %tmp.103, %tmp.105);
+C_Users_HellCoda_Downloads_AppGarmin_Forerunner55WatchFace_master_source_DateText_mc_22_23_39_1_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\AppGarmin\Forerunner55WatchFace-master\source\DateText.mc"; @line = 1; ]
+<init> {
+}

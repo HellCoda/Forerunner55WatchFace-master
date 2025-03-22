@@ -1,0 +1,177 @@
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 2; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 3; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 4; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 5; ]
+using Toybox.Time;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 6; ]
+using Toybox.Lang as :Lang;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 7; ]
+using Toybox.Application;
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 9; ]
+module SecondsRing {
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 11; @position = 5; ]
+    var displaySeconds;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 12; @position = 5; ]
+    var lowPower = false;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 14; @position = 5; ]
+    var RING_WIDTH = 3;
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 16; ]
+    function drawSeconds(dc) {
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 18 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %centerX.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %centerX.1 %tmp.5;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 19 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %centerY.2 = local;
+        %tmp.7 = lgetv %centerX.1;
+        lputv %centerY.2 %tmp.7;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 20 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %radius.3 = local;
+        %tmp.9 = lgetv %centerX.1;
+        %tmp.10 = 1;
+        %tmp.11 = sub %tmp.9 %tmp.10;
+        lputv %radius.3 %tmp.11;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 22 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %moment.4 = local;
+        %tmp.12 = getm $.Toybox.Time.Gregorian;
+        %tmp.13 = getv function %tmp.12 :info;
+        %tmp.14 = getm $.Toybox.Time;
+        %tmp.15 = getv function %tmp.14 :now;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = getm $.Toybox.Time;
+        %tmp.18 = getv %tmp.17 :FORMAT_LONG;
+        %tmp.19 = invoke %tmp.12 %tmp.13(%tmp.16, %tmp.18);
+        lputv %moment.4 %tmp.19;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 23 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %seconds.5 = local;
+        %tmp.20 = lgetv %moment.4;
+        %tmp.21 = getv %tmp.20 :sec;
+        lputv %seconds.5 %tmp.21;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 24 2 ]
+        [ "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_start" "C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop" ]
+        %angle.6 = local;
+        %tmp.22 = 90;
+        %tmp.23 = 359;
+        %tmp.25 = lgetv %seconds.5;
+        %tmp.26 = 60.0;
+        %tmp.27 = div %tmp.25 %tmp.26;
+        %tmp.28 = mul %tmp.23 %tmp.27;
+        %tmp.29 = sub %tmp.22 %tmp.28;
+        %tmp.30 = getv function %tmp.29 :toNumber;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %angle.6 %tmp.31;
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 26 2 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_stmt:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_6_26_65_begin:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_6_26_25_begin:
+        %tmp.33 = getv ? :displaySeconds;
+        bf %tmp.33 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_24_26_25_true:
+        %tmp.35 = getv ? :lowPower;
+        %tmp.36 = not %tmp.35;
+        push %tmp.36;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_24_26_25_end:
+        %tmp.37 = phi [%tmp.33 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_6_26_25_begin] [%tmp.36 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_24_26_25_true] [%tmp.37 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_24_26_25_end];
+        bf %tmp.37 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_37_26_65_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_38_26_63_begin:
+        %tmp.39 = lgetv %angle.6;
+        %tmp.40 = 450;
+        %tmp.41 = ne %tmp.39 %tmp.40;
+        bt %tmp.41 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_true;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_54_26_63_false:
+        %tmp.43 = lgetv %angle.6;
+        %tmp.44 = 90;
+        %tmp.45 = ne %tmp.43 %tmp.44;
+        push %tmp.45;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_54_26_63_end:
+        %tmp.46 = phi [%tmp.41 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_38_26_63_begin] [%tmp.45 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_54_26_63_false] [%tmp.46 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_54_26_63_end];
+        push %tmp.46;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_37_26_65_end:
+        %tmp.47 = phi [%tmp.37 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_6_26_65_begin] [%tmp.46 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_37_26_65_true] [%tmp.47 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_37_26_65_end];
+        bf %tmp.47 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_68_33_2_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 27 3 ]
+        %tmp.48 = lgetv %dc;
+        %tmp.49 = getv function %tmp.48 :setColor;
+        %tmp.50 = lgetv %dc;
+        %tmp.51 = getv %tmp.50 :COLOR_WHITE;
+        %tmp.52 = lgetv %dc;
+        %tmp.53 = getv %tmp.52 :COLOR_BLACK;
+        invoke %tmp.48 %tmp.49(%tmp.51, %tmp.53);
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 28 3 ]
+        %tmp.54 = lgetv %dc;
+        %tmp.55 = getv function %tmp.54 :setPenWidth;
+        %tmp.57 = getv ? :RING_WIDTH;
+        invoke %tmp.54 %tmp.55(%tmp.57);
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 29 3 ]
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_3_31_3_if_stmt:
+        %tmp.59 = lgetv %dc;
+        %tmp.61 = const :setAntiAlias;
+        %tmp.62 = canhazplz %tmp.59 %tmp.61;
+        bf %tmp.62 @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_3_31_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_3_31_3_if_true:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_29_31_3_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 30 4 ]
+        %tmp.63 = lgetv %dc;
+        %tmp.64 = as %tmp.63 { (interface { var setAntiAlias; }) };
+        %tmp.65 = getv function %tmp.64 :setAntiAlias;
+        %tmp.66 = true;
+        invoke %tmp.64 %tmp.65(%tmp.66);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_29_31_3_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_3_31_3_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_29_3_31_3_if_end:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 32 3 ]
+        %tmp.67 = lgetv %dc;
+        %tmp.68 = getv function %tmp.67 :drawArc;
+        %tmp.70 = lgetv %centerX.1;
+        %tmp.72 = lgetv %centerY.2;
+        %tmp.74 = lgetv %radius.3;
+        %tmp.75 = 1;
+        %tmp.76 = sub %tmp.74 %tmp.75;
+        %tmp.77 = lgetv %dc;
+        %tmp.78 = getv %tmp.77 :ARC_CLOCKWISE;
+        %tmp.79 = 90;
+        %tmp.81 = lgetv %angle.6;
+        invoke %tmp.67 %tmp.68(%tmp.70, %tmp.72, %tmp.76, %tmp.78, %tmp.79, %tmp.81);
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_68_33_2_stop:
+        goto @C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_end;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_26_2_33_2_if_end:
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_16_26_35_1_stop:
+    }
+    [ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 37; ]
+    function setSettings() {
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_37_24_41_1_start:
+[ "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc" 39 2 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv function %tmp.3 :getProperty;
+        %tmp.5 = "DisplaySeconds";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        putv self :displaySeconds %tmp.6;
+C_Users_HellCoda_Downloads_Forerunner55WatchFace_master_source_SecondsRing_mc_37_24_41_1_stop:
+    }
+}
+[ @file = "C:\Users\HellCoda\Downloads\Forerunner55WatchFace-master\source\SecondsRing.mc"; @line = 1; ]
+<init> {
+}
